@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "findLargestNumber.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        NSMutableArray *array = [NSMutableArray arrayWithObjects: @1, @4, @743, @77, @0, nil];
+        //NSLog(@"%@", array);
+        NSLog(@"The largest value is %@", [array largest:array]);
     }
     return 0;
 }

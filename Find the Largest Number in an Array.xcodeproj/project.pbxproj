@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E254D2F71DA80FA000E56619 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E254D2F61DA80FA000E56619 /* main.m */; };
+		E254D3021DA8109E00E56619 /* findLargestNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = E254D3011DA8109E00E56619 /* findLargestNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		E254D2F31DA80FA000E56619 /* Find the Largest Number in an Array */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Find the Largest Number in an Array"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E254D2F61DA80FA000E56619 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E254D3001DA8109E00E56619 /* findLargestNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = findLargestNumber.h; sourceTree = "<group>"; };
+		E254D3011DA8109E00E56619 /* findLargestNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = findLargestNumber.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				E254D2F61DA80FA000E56619 /* main.m */,
+				E254D3001DA8109E00E56619 /* findLargestNumber.h */,
+				E254D3011DA8109E00E56619 /* findLargestNumber.m */,
 			);
 			path = "Find the Largest Number in an Array";
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E254D3021DA8109E00E56619 /* findLargestNumber.m in Sources */,
 				E254D2F71DA80FA000E56619 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
