@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSMutableArray (findLargestNumber)
+@interface NSArray (findLargestNumber)
 
-- (id)largest:(NSMutableArray *)array;
+- (NSNumber*)largest;//:(NSArray *)array;
 
 @end

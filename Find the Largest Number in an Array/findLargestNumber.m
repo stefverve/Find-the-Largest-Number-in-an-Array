@@ -8,13 +8,17 @@
 
 #import "findLargestNumber.h"
 
-@implementation NSMutableArray (findLargestNumber)
+@implementation NSArray (findLargestNumber)
 
-- (id)largest:(NSMutableArray *)array {
-    id currentLargest = @0;
-    for (id item in array) {
-        if (item > currentLargest) {
-            currentLargest = item;
+- (NSNumber*)largest{//:(NSArray *)array {
+    NSNumber *currentLargest = nil;
+    for (NSNumber *item in self) {
+        if ([item isKindOfClass:[NSNumber class]]) {
+            if (currentLargest == nil || item.integerValue > currentLargest.integerValue) {
+                currentLargest = item;
+            }
+        } else {
+            NSLog(@"Item in slot %lu is not a number!", (unsigned long)[self indexOfObject:item]);
         }
     }
     return currentLargest;
