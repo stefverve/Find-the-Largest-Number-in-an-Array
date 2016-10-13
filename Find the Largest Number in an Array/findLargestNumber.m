@@ -14,7 +14,7 @@
     NSNumber *currentLargest = nil;
     for (NSNumber *item in self) {
         if ([item isKindOfClass:[NSNumber class]]) {
-            if (currentLargest == nil || item.integerValue > currentLargest.integerValue) {
+            if (currentLargest == nil || [item compare:currentLargest] == NSOrderedDescending){
                 currentLargest = item;
             }
         } else {

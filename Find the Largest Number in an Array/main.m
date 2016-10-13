@@ -11,10 +11,9 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSArray *array = @[@"thing", @-4, @-743, @-77, @"again"];
-        //NSMutableArray *array = [NSMutableArray arrayWithObjects: @1, @4, @743, @77, @0, nil];
-        NSLog(@"%@", array);
-        NSLog(@"The largest value is %@", [array largest]);//:array]);
+        NSArray *array = @[@"thing", @-4, @(12.3f), @(12.4f), @-77, @"again"];
+        //NSLog(@"%@", array);
+        NSLog(@"The largest value is %@", [array largest]);
     }
     return 0;
 }
